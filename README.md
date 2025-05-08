@@ -1,25 +1,53 @@
-# Medicinal-Plant-Image-Recognisation-Model
-Plant Image Recognition System is a machine learning project that classifies plants based on images. It uses a pre-trained CNN model to predict the plant name, scientific name, and its medicinal benefits. The system is trained on 150 plant images and can be further expanded for better accuracy.
-Key Features:
-Image Classification: Recognizes plant species based on the uploaded image.
+Plant Image Recognition System 🌿
+Welcome to the Plant Image Recognition System, a machine learning project that uses MobileNetV2 with TensorFlow and Keras to recognize plant species based on their images. This tool helps identify the plant name, scientific name, and medicinal benefits of a plant through a single uploaded image.
 
-Plant Information: Displays the scientific name and medicinal benefits of identified plants.
+🔍 Introduction
+This project is built to classify 150 unique plant species. Each plant in the dataset is represented by a single image, and the model predicts the plant’s identity and its medicinal uses. It serves as a valuable aid for plant enthusiasts, students, and researchers.
 
-Simple Interface: Users can upload images for fast plant identification.
+⚙️ Setup
+Install required dependencies:
 
-Custom Dataset: The model is trained on a dataset of 150 plants, each represented by a single image.
+bash
+Copy
+Edit
+pip install tensorflow opencv-python matplotlib pandas  
+Clone the repository:
 
-Scalable: Designed for future improvements, including multi-image support per plant and expansion to more plant species.
+bash
+Copy
+Edit
+git clone https://github.com/your-username/Plant-Image-Recognition-System.git  
+cd Plant-Image-Recognition-System  
+📁 Data Structure
+The system uses an Excel file (plants_data.xlsx) that contains plant names, scientific names, and benefits. Each plant image is named according to the plant name and stored in a single folder.
 
-Technologies Used:
+🧠 Model
+We use MobileNetV2, a lightweight deep learning architecture ideal for image classification tasks, especially where limited data is available.
+
+🛠️ Technologies Used
 Python
 
-TensorFlow (Keras)
-
-scikit-learn (KNN Classifier)
+TensorFlow & Keras
 
 OpenCV
 
-pandas (Data handling)
+Pandas
 
-This project is ideal for plant enthusiasts, researchers, and developers interested in applying machine learning to plant identification. Future improvements will include more images per plant, better accuracy, and the addition of new plant species.
+Matplotlib
+
+Jupyter Notebook
+
+🏁 Inference
+Run the prediction:
+
+bash
+Copy
+Edit
+python predict.py --image path/to/image.jpg  
+The model will output the plant’s name, scientific name, and its medicinal benefits.
+
+🔄 Future Scope
+This project can be improved by adding more images per plant, text-based search, real-time camera input, and expanding the database.
+
+📜 License
+This project is open-source and available under the MIT License.
