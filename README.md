@@ -51,3 +51,4 @@ This project can be improved by adding more images per plant, text-based search,
 
 📜 License
 This project is open-source and available under the MIT License.
+
